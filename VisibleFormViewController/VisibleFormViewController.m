@@ -43,7 +43,7 @@
     CGRect frame = self.view.frame;
     CGFloat visibleHeight = frame.size.height - keyboardBounds.size.height ;
     CGFloat lastVisiblePointY = self.lastVisibleView.frame.origin.y + self.lastVisibleView.frame.size.height;
-    if ( self.visibleOffset == 0 && (lastVisiblePointY + self.visibleMargin ) > visibleHeight) {
+    if (self.lastVisibleView && self.visibleOffset == 0 && (lastVisiblePointY + self.visibleMargin ) > visibleHeight) {
         self.visibleOffset = lastVisiblePointY - visibleHeight + self.visibleMargin ;
         frame.origin.y -= self.visibleOffset;
     }

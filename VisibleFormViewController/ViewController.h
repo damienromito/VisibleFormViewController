@@ -10,6 +10,5 @@
 
 @interface ViewController : VisibleFormViewController
 
-
 @end
 

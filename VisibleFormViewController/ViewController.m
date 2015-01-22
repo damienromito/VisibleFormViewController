@@ -42,7 +42,7 @@
                                views:views]];
     
     [self.view addConstraints:[NSLayoutConstraint
-                               constraintsWithVisualFormat:@"V:|-350-[field1(44)]-[label]"
+                               constraintsWithVisualFormat:@"V:|-300-[field1(44)]-[label]"
                                options: NSLayoutFormatAlignAllRight | NSLayoutFormatAlignAllLeft
                                metrics:0
                                views:views]];
